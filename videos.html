@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סרטוני למידה - מרכז הדרכה</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; }
+        
+        header { background-color: #004a99; color: white; padding: 10px; text-align: center; }
+        header h1 { margin: 5px 0; font-size: 1.5rem; }
+        .back-link { color: white; text-decoration: none; font-size: 0.9rem; border: 1px solid white; padding: 2px 10px; border-radius: 4px; }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            padding: 0 20px;
+        }
+
+        .video-card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border: 1px solid #e1e4e8;
+        }
+
+        /* מקום לתמונה ממוזערת של הסרטון */
+        .video-thumbnail {
+            background-color: #000;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .video-info { padding: 20px; text-align: center; }
+        .video-info h3 { margin: 0 0 10px 0; color: #004a99; }
+        .video-info p { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
+
+        .watch-btn { 
+            background-color: #ff0000; /* אדום יוטיוב */
+            color: white; 
+            padding: 8px 20px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            display: inline-block;
+        }
+        
+        footer { text-align: center; padding: 40px 20px; color: #888; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="back-link">חזרה לדף הבית</a>
+    <h1>סרטוני למידה והדרכה</h1>
+</header>
+
+<div class="container">
+    <div class="video-card">
+        <div class="video-thumbnail">תמונה של הסרטון</div>
+        <div class="video-info">
+            <h3>הדרכת החייאה 2026</h3>
+            <p>דגשים לביצוע עיסויים והנשמה בצוות פרמדיקים.</p>
+            <a href="#" class="watch-btn">לצפייה ביוטיוב</a>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <div class="video-thumbnail">תמונה של הסרטון</div>
+        <div class="video-info">
+            <h3>הכנה לבדיקת גסטרו</h3>
+            <p>סרטון הדרכה למטופל ולאחיות המכון על שלבי הבדיקה.</p>
+            <a href="#" class="watch-btn">לצפייה ביוטיוב</a>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <div class="video-thumbnail">תמונה של הסרטון</div>
+        <div class="video-info">
+            <h3>פענוח הפרעות קצב</h3>
+            <p>זיהוי מהיר של VF/VT וטיפול באמצעות דפיברילטור.</p>
+            <a href="#" class="watch-btn">לצפייה ביוטיוב</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>נבנה על ידי דוד | 2026</p>
+</footer>
+
+</body>
+</html>
