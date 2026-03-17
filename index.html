@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז הדרכה רפואי</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; }
+        
+        header { background-color: #004a99; color: white; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header h1 { margin: 5px 0; font-size: 1.5rem; }
+        header p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            padding: 0 20px;
+        }
+
+        .guide-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border: 1px solid #e1e4e8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s;
+            min-height: 150px;
+        }
+        
+        .guide-card:hover { transform: translateY(-5px); border-color: #004a99; }
+        .guide-card h3 { margin: 0 0 15px 0; color: #004a99; font-size: 1.4rem; }
+
+        .action-btn { 
+            background-color: #28a745; 
+            color: white; 
+            padding: 10px 25px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+        }
+        
+        footer { text-align: center; padding: 40px 20px; color: #888; font-size: 0.85em; }
+
+        @media (max-width: 600px) {
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>מרכז הדרכה ופרוטוקולים</h1>
+    <p>חומרי עזר מקצועיים לצוותי רפואה</p>
+</header>
+
+<div class="container">
+    <div class="guide-card">
+        <h3>סרטוני למידה</h3>
+        <h3></h3>
+        <a href="#" class="action-btn">לצפייה</a>
+    </div>
+
+    <div class="guide-card">
+        <h3>בחנים</h3>
+        <h3></h3>
+        <a href="#" class="action-btn">למעבר לבחנים</a>
+    </div>
+
+    <div class="guide-card">
+        <h3>ספרות</h3>
+        <h3></h3>
+        <a href="#" class="action-btn">לקריאה</a>
+    </div>
+
+    <div class="guide-card">
+        <h3>לקחים</h3>
+        <h3></h3>
+        <a href="#" class="action-btn">לצפייה בלקחים</a>
+    </div>
+</div>
+
+<footer>
+    <p>נבנה על ידי דוד | 2026</p>
+</footer>
+
+</body>
+</html>
