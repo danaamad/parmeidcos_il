@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספרות ופרוטוקולים - מרכז הדרכה</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 0; }
+        
+        header { background-color: #004a99; color: white; padding: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header h1 { margin: 5px 0; font-size: 1.5rem; }
+        .back-link { color: white; text-decoration: none; font-size: 0.9rem; border: 1px solid white; padding: 2px 10px; border-radius: 4px; }
+
+        .container { 
+            max-width: 1000px; 
+            margin: 30px auto; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            padding: 0 20px;
+        }
+
+        .doc-card { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border: 1px solid #e1e4e8;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        
+        .doc-card:hover { transform: scale(1.02); border-color: #004a99; }
+        
+        .doc-icon { font-size: 2.5rem; margin-left: 20px; color: #004a99; }
+        
+        .doc-info { flex-grow: 1; text-align: right; }
+        .doc-info h3 { margin: 0 0 5px 0; color: #333; font-size: 1.1rem; }
+        .doc-info p { font-size: 0.85rem; color: #777; margin: 0; }
+
+        .read-btn { 
+            background-color: #34495e; 
+            color: white; 
+            padding: 8px 15px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        
+        footer { text-align: center; padding: 40px 20px; color: #888; font-size: 0.85em; }
+
+        @media (max-width: 600px) {
+            .doc-card { flex-direction: column; text-align: center; }
+            .doc-icon { margin-left: 0; margin-bottom: 15px; }
+            .doc-info { margin-bottom: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="back-link">חזרה לדף הבית</a>
+    <h1>ספרות מקצועית ופרוטוקולים</h1>
+</header>
+
+<div class="container">
+    <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <div class="doc-info">
+            <h3>פרוטוקול ACLS 2026</h3>
+            <p>המדריך המלא להחייאה מתקדמת (PDF)</p>
+        </div>
+        <a href="#" class="read-btn">לקריאה</a>
+    </div>
+
+    <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <div class="doc-info">
+            <h3>נהלי עבודה במכון גסטרו</h3>
+            <p>הנחיות בטיחות וסיעוד אנדוסקופי</p>
+        </div>
+        <a href="#" class="read-btn">לקריאה</a>
+    </div>
+
+    <div class="doc-card">
+        <div class="doc-icon">📄</div>
+        <div class="doc-info">
+            <h3>מדריך פרמדיקים לשטח</h3>
+            <p>פרוטוקולי טיפול בטראומה וחירום</p>
+        </div>
+        <a href="#" class="read-btn">לקריאה</a>
+    </div>
+</div>
+
+<footer>
+    <p>נבנה על ידי דוד | 2026</p>
+</footer>
+
+</body>
+</html>
